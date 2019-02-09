@@ -1,0 +1,27 @@
+// C Program to print the reverse all the bits of a given number
+#include <stdio.h>
+
+int main()
+{
+ short int val,c,m,n,i,j;
+ printf("\nPlease enter a number to reverse all the bits of the number : ");
+ scanf("%d",&val);
+
+  for( i = 0, j = 15 ; i < j ; i++, j--)
+  {
+  m = val >> i & 1;
+  n = val >> j & 1;
+  if(m != n)
+   {
+	val = val ^ 1<<i;
+	val = val ^ 1<<j;
+   }
+  }
+  for(i=15;i>=0;i--)
+  {
+   if(val & (1<<i)) printf("1");
+   else printf("0");
+  }
+ printf("\n");
+ return 0;
+}
