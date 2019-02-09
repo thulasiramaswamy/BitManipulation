@@ -1,4 +1,6 @@
 // C Program to print the reverse all the bits of a given number
+// input - 10 (0000000000001010)
+// output - 0101000000000000
 #include <stdio.h>
 
 int main()
