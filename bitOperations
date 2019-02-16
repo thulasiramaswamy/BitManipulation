@@ -18,7 +18,7 @@ int main()
 	case 1:
 		printf("Enter the Position u Want\n");
 		scanf(" %d",&Pos);
-		res = inpNo & ( 1 << (Pos - 1));
+		res = inpNo & ( 1 << Pos);
 		if(res)
  			printf("It is Already Set\n");
 		else
